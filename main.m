@@ -2,8 +2,9 @@
 
 [offres, asymmetry_phase] = OffResonance_Mapping(profiles, 4);
 
+%%
 [T1map, T2map, pdmap, b0map, amap, qmap, Mmap] = ...
-  NNLS_Mapping(profiles, 4, 15, 20);
+  NLLS_Mapping(profiles, 5.7, 34, 30);
 
 %%
 selected_slice = 15;
